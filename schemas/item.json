@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema",
-  "$id": "https://ansuzdev.com/schemas/item.json",
+  "$id": "https://raw.githubusercontent.com/Ansuz-Development/templar/main/schemas/item.json",
   "title": "Item",
   "description": "Form item",
   "type": "object",
@@ -100,7 +100,7 @@
       "type": "array",
       "description": "List of form items in object item or array item",
       "items": {
-        "$ref": "https://ansuzdev.com/schemas/item.json"
+        "$ref": "https://raw.githubusercontent.com/Ansuz-Development/templar/main/schemas/item.json"
       }
     }
   }
