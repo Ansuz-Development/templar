@@ -1,0 +1,17 @@
+{
+  "name": "templar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "docxtemplater": "^3.29.4",
+    "pizzip": "^3.1.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.18.7/xlsx-0.18.7.tgz"
+  }
+}

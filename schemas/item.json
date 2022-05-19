@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "https://ansuzdev.com/schemas/item.json",
+  "title": "Item",
+  "description": "Form item",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of form item",
+      "enum": ["Text", "DateTime", "Boolean", "Select", "Choice", "Object", "Array"]
+    },
+    "key": {
+      "type": "string",
+      "description": "Unique key for form item"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title of form item"
+    },
+    "subtitle": {
+      "type": "string",
+      "description": "Subtitle of form item"
+    },
+    "uisize": {
+      "type": "integer",
+      "description": "UI size",
+      "enum": [3, 4, 6, 8, 9, 12]
+    },
+    "placeholder": {
+      "type": "string",
+      "description": "Placeholder of text item"
+    },
+    "multilines": {
+      "type": "boolean",
+      "description": "Set if text item has multiple lines"
+    },
+    "isNumber": {
+      "type": "boolean",
+      "description": "Set if text item contains only numberic characters"
+    },
+    "isEmail": {
+      "type": "boolean",
+      "description": "Set if text item has email format"
+    },
+    "autosuggestion": {
+      "type": "boolean",
+      "description": "Set if text item is auto-suggestion"
+    },
+    "isDate": {
+      "type": "boolean",
+      "description": "Set if datetime item is date format"
+    },
+    "isTime": {
+      "type": "boolean",
+      "description": "Set if datetime item is time format"
+    },
+    "format": {
+      "type": "string",
+      "description": "Datetime format"
+    },
+    "label": {
+      "type": "string",
+      "description": "Label of boolean item"
+    },
+    "isTrue": {
+      "type": "boolean",
+      "description": "Set if boolean item is true"
+    },
+    "labelKey": {
+      "type": "string",
+      "description": "Key is used as label in select item or choice item"
+    },
+    "values": {
+      "type": "array",
+      "description": "Set if datetime item is date format or choice item",
+      "items": {
+        "oneOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "object"
+          }
+        ]
+      }
+    },
+    "defaultValue": {
+      "type": "string",
+      "description": "Default value of select item"
+    },
+    "defaultValues": {
+      "type": "array",
+      "description": "Default values of choice item",
+      "items": {
+        "type": "string"
+      }
+    },
+    "items": {
+      "type": "array",
+      "description": "List of form items in object item or array item",
+      "items": {
+        "$ref": "https://ansuzdev.com/schemas/item.json"
+      }
+    }
+  }
+}
