@@ -5,6 +5,10 @@
   "description": "Template schema",
   "type": "object",
   "properties": {
+    "id": {
+      "type": "string",
+      "description": "Template unique identify"
+    },
     "name": {
       "type": "string",
       "description": "Template name"
@@ -16,5 +20,10 @@
         "$ref": "https://raw.githubusercontent.com/Ansuz-Development/templar/main/schemas/item.json"
       }
     }
-  }
+  },
+  "required": [
+    "id",
+    "name",
+    "items"
+  ]
 }

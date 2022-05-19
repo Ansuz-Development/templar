@@ -1,0 +1,78 @@
+{
+  "id": "clientpet",
+  "name": "Client pets",
+  "items": [
+    {
+      "name": "Text",
+      "key": "clientName",
+      "title": "Client name",
+      "subtitle": "Enter fullname",
+      "uisize": 6,
+      "placeholder": "Client name",
+      "autosuggestion": true
+    },
+    {
+      "name": "Array",
+      "key": "pets",
+      "title": "Pets",
+      "subtitle": "Enter client's pets",
+      "uisize": 12,
+      "items": [
+        {
+          "name": "Text",
+          "key": "petName",
+          "title": "Pet name",
+          "autosuggestion": true
+        },
+        {
+          "name": "Select",
+          "key": "petBreed",
+          "title": "Pet breed",
+          "values": [
+            "Dog",
+            "Cat"
+          ]
+        },
+        {
+          "name": "Choice",
+          "key": "petColor",
+          "title": "Pet color",
+          "multichoices": true,
+          "values": [
+            "Black",
+            "White",
+            "Yellow",
+            "Brown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Object",
+      "key": "contact",
+      "title": "Contact",
+      "subtitle": "Enter client's contact",
+      "uisize": 12,
+      "items": [
+        {
+          "name": "Text",
+          "key": "email",
+          "title": "Client email",
+          "autosuggestion": true,
+          "isEmail": true
+        },
+        {
+          "name": "Text",
+          "key": "phone",
+          "title": "Client phone number",
+          "autosuggestion": true
+        },
+        {
+          "name": "Text",
+          "key": "address",
+          "title": "Client address"
+        }
+      ]
+    }
+  ]
+}
