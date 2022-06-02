@@ -14,6 +14,10 @@
       "type": "string",
       "description": "Unique key for form item"
     },
+    "required": {
+      "type": "boolean",
+      "description": "Set if the item is required"
+    },
     "title": {
       "type": "string",
       "description": "Title of form item"
